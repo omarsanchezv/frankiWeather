@@ -1,7 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
-    alias(libs.plugins.serialization)
 }
 
 android {
@@ -77,4 +76,5 @@ dependencies {
     implementation(libs.lifeCycle)
     implementation(libs.lifecycle.viewmodel)
     implementation(libs.androidx.lifecycle.runtime.compose)
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
 }
